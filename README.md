@@ -44,6 +44,9 @@ Web-de-Infusion/
 │
 ├── index.html           
 │
+├── assets/
+│   └──  logo.png
+
 ├── css/
 │   ├── origen-coffee-styles.css
 │   └── styles.css        

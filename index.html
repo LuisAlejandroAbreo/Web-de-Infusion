@@ -2158,6 +2158,14 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-size: var(--text-sm);
 }
 
+.logo-img {
+  width: auto;
+  height: 1.4em; /* Se escala proporcionalmente al tamaño del texto que lo acompaña */
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
 /* Responsive additions */
 @media (max-width: 1100px) {
   .ps__benefits-grid { grid-template-columns: repeat(2, 1fr); }
@@ -2185,8 +2193,11 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   <!-- ═══ NAV ═══ -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#hero" class="nav__logo">
-        <span class="nav__logo-mark">⬡</span>Origen
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">
+          <img src="assets/logo.png" alt="Logo Origen Coffee" class="logo-img" />
+        </span>
+        Origen Coffee
       </a>
       <ul class="nav__links">
         <li><a href="#institutional">Institucional</a></li>
@@ -2870,9 +2881,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__brand">
-        <span style="font-size:1.6rem;color:var(--amber)">⬡</span>
-        <span class="footer__name">Origen Coffee</span>
-        <p class="footer__tagline">Del origen a tu taza.</p>
+        <div class="footer__name" style="display: flex; align-items: center; gap: 0.5rem;">
+          <span class="footer__logo-mark">
+            <img src="assets/logo.png" alt="Logo Origen Coffee" class="logo-img" />
+          </span>
+          Origen Coffee
+        </div>
+        <p class="footer__tagline">Cada taza cuenta una historia de origen.</p>
         <div class="footer__social">
           <a href="#" aria-label="Instagram">IG</a>
           <a href="#" aria-label="Facebook">FB</a>
